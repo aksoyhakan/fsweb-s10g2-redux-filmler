@@ -20,7 +20,10 @@ const reducer = (state = initialState, action) => {
         title: action.payload.title,
       };
 
-      if (state.favorites.find((item) => item.id === action.payload.id))
+      if (
+        state.favorites.find((item) => item.id === action.payload.id) ||
+        !state.displayFavorites
+      )
         return state;
       else return { ...state, favorites: [...state.favorites, favoriteMovie] };
     }

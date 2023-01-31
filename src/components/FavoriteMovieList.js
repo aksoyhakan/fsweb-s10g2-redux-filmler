@@ -19,10 +19,7 @@ const FavoriteMovieList = (props) => {
           >
             {movie.title}
             <span
-              onClick={() => {
-                dispatch(removeFavorite(movie.id));
-                console.log(movie.id);
-              }}
+              onClick={() => dispatch(removeFavorite(movie.id))}
               className="material-icons hover:text-red-600 text-[18px]"
             >
               remove_circle
