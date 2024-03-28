@@ -21,7 +21,7 @@ const MovieHeader = (props) => {
           <span>Favorileri {displayFavorites ? "gizle" : "göster"}</span>
         </div>
         <Link to="/movies" className="myButton bg-blue-600 hover:bg-blue-500">
-          Tüm filmler
+          Tüm filmler **
         </Link>
         <Link
           to="/movies/add"
